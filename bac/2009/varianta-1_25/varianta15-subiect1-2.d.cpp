@@ -28,6 +28,8 @@ int main() {
 
     }
 
-    cout << "a=" << a;
+    cout << endl << "a=" << a;
+
+    return 0;
 
 }

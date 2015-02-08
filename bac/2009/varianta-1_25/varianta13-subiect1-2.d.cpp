@@ -11,7 +11,7 @@ int main() {
         cout << "b= "; cin >> b;
 
     }
-    while ( a<0 && b<0 && a>=b );
+    while ( a<0 || b<0 || a>=b );
 
     for (int i=a; i<=b; i++) {
 

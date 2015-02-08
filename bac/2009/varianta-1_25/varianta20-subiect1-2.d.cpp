@@ -31,4 +31,6 @@ int main() {
 
     cout << endl << "m=" << m;
 
+    return 0;
+
 }

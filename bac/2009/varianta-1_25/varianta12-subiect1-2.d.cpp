@@ -12,6 +12,7 @@ int main() {
     }
     while ( x<0 );
 
+
     while ( x!=0 ) {
 
         while ( x>9 ) {
@@ -20,12 +21,12 @@ int main() {
 
         }
 
-        y = y/10+x;
+        y = y*10+x;
         cout << "x= "; cin >> x;
 
     }
 
-    cout << "y=" << y;
+    cout << endl << "y=" << y << endl;
 
     return 0;
 

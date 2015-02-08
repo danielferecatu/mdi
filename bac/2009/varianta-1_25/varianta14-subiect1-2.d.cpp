@@ -34,7 +34,7 @@ int main() {
 
     }
 
-    cout << "n=" << n;
+    cout << endl << "n=" << n;
 
     return 0;
 
