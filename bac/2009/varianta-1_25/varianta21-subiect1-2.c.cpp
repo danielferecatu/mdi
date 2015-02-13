@@ -21,7 +21,7 @@ int main() {
 
         cout << a/b;
 
-        if ( n>0 && a%b==0 ) {
+        if ( n>0 && a%b!=0 ) {
 
             cout << ",";
             a %= b;
