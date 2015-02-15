@@ -24,11 +24,11 @@ int main() {
 
     while ( a<=b ) {
 
-        if ( c|a ) {
+        if ( a%c==0 ) {
 
             cout << a;
 
-        }
+          }
 
         a++;
 
