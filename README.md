@@ -7,3 +7,8 @@ The files in this repo are for learning purposes only. If you use these files in
 ## What is this?
 
 All you can transform in code and drop in C++ from BAC variants.
+
+
+NOTE
+
+All .cpp files are optimized for console.
