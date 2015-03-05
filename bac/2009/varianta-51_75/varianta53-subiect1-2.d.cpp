@@ -6,7 +6,10 @@ int main() {
 int x, z=0, p=1, c;
 
 do {
-    cout << "x= "; cin >> x;
+	
+    cout << "x= ";
+    cin >> x;
+    
 }
 while ( x<=0 );
 

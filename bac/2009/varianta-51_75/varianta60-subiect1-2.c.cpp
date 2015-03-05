@@ -6,7 +6,10 @@ int main() {
 int n, c=10;
 
 do {
-    cout << "n= "; cin >> n;
+	
+    cout << "n= ";
+    cin >> n;
+    
 }
 while ( n<0 );
 

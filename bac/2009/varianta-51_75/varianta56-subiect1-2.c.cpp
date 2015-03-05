@@ -6,7 +6,10 @@ int main() {
 int n, r=0;
 
 do {
-    cout << "n= "; cin >> n;
+
+    cout << "n= ";
+    cin >> n;
+
 }
 while ( n<0 );
 
@@ -16,7 +19,7 @@ do {
     n /= 100;
 
 }
-while ( n<10 );
+while ( n>=10 );
 
 cout << endl << "r= " << r;
 

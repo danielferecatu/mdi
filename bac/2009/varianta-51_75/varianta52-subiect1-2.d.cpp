@@ -6,14 +6,20 @@ int main() {
 int x, n, d=0, c=0;
 
 do {
-    cout << "n= "; cin >> n;
+
+    cout << "n= ";
+    cin >> n;
+
 }
 while ( n<=0 );
 
 for ( int i=1; i<=n; i++ ) {
 
     do {
-        cout << "x= "; cin >> x;
+        
+        cout << "x= ";
+        cin >> x;
+
     }
     while ( x<=0 );
 

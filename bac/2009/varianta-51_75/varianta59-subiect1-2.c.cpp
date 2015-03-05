@@ -6,14 +6,17 @@ int main() {
 int n;
 
 do {
-    cout << "n= "; cin >> n;
+
+    cout << "n= ";
+    cin >> n;
+
 }
 while ( n<0 );
 
 
 do {
 
-    n = n + n%10;
+    n += n%10;
     n /= 10;
 
 }
