@@ -3,44 +3,42 @@ using namespace std;
 
 int main() {
 
-    int x, d=2, y=0, z=0;
+int x, d=2, y=0, z=0, p;
 
-    do {
+do {
 
-        cout << "x= "; cin >> x;
+    cout << "x= ";
+    cin >> x;
 
-    }
-    while ( x<=0 );
+}
+while ( x<=0 );
 
-    while ( x!=1 ) {
+while ( x!=1 ) {
 
-        int p = 0;
+    p = 0;
 
-        while ( x%d==0 ) {
+    while ( x%d==0 ) {
 
-            p++;
-            x /= d;
-
-        }
-
-        if ( p!=0 ) {
-
-            if ( y==0 ) {
-
-                y = d;
-
-            }
-
-            z = d;
-
-        }
-
-        d++;
+        p++;
+        x /= d;
 
     }
 
-    cout << endl << "y=" << y;
-    cout << endl << "z=" << z;
+    if ( p!=0 ) {
 
-    return 0;
+        if ( y==0 ) y = d;
+
+        z = d;
+
+    }
+
+    d++;
+
+}
+
+cout << endl << "y=" << y;
+cout << endl << "z=" << z;
+
+return 0;
+
 }

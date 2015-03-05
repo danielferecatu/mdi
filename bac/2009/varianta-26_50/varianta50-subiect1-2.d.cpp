@@ -3,37 +3,34 @@ using namespace std;
 
 int main() {
 
-    int n, k=9, c;
+int n, k=9, c, x;
+
+do {
+
+    cout << "n= ";
+    cin >> n;
+
+}
+while ( n<=0 );
+
+for ( int i=1; i<=n; i++ ) {
 
     do {
 
-        cout << "n= "; cin >> n;
+        cout << "x= ";
+        cin >> x;
 
     }
-    while ( n<=0 );
+    while ( x<0 );
 
-    for ( int i=1; i<=n; i++ ) {
+    c = x/10%10;
 
-        int x;
+    if ( c<k ) k = c;
 
-        do {
+}
 
-            cout << "x= "; cin >> x;
+cout << endl << "k=" << k;
 
-        }
-        while ( x<0 );
+return 0;
 
-        c = x/10%10;
-
-        if ( c<k ) {
-
-            k = c;
-
-        }
-
-    }
-
-    cout << endl << "k=" << k;
-
-    return 0;
 }

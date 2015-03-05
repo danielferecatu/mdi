@@ -3,46 +3,47 @@ using namespace std;
 
 int main() {
 
-    int n;
+int n, x, nr;
+
+do {
+
+    cout << "n= ";
+    cin >> n;
+
+}
+while ( n<=0 );
+
+for ( int i=1; i<=n; i++) {
+
 
     do {
 
-        cout << "n= "; cin >> n;
-        cout << endl;
+        cout << "x= ";
+        cin >> x;
 
     }
-    while ( n<=0 );
+    while ( x<0 );
 
-    for ( int i=1; i<=n; i++) {
+    nr = 0;
 
-        int x;
+    while ( x>0 ) {
 
-        do {
-
-            cout << "x= "; cin >> x;
-
-        }
-        while ( x<0 );
-
-        int nr = 0;
-
-        while ( x>0 ) {
-
-            nr = nr*100 + x%10;
-            x /= 100;
-
-        }
-
-        while ( nr>0 ) {
-
-            x = x*10 + nr%10;
-            nr /= 10;
-
-        }
-
-        cout << "x=" << x << endl << endl;
+        nr = nr*100 + x%10;
+        x /= 100;
 
     }
 
-    return 0;
+    while ( nr>0 ) {
+
+        x = x*10 + nr%10;
+        nr /= 10;
+
+    }
+
+    cout << "x=" << x;
+
+}
+
+return 0;
+
 }

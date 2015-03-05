@@ -3,29 +3,28 @@ using namespace std;
 
 int main() {
 
-    int x, y, z=1, t=0;
+int x, y, z=1, t=0;
 
-    do {
+do {
 
-        cout << "x= "; cin >> x;
-        cout << "y= "; cin >> y;
+    cout << "x= ";
+    cin >> x;
 
-    }
-    while ( x<0 );
+    cout << "y= ";
+    cin >> y;
 
-    while ( x>=z ) {
+}
+while ( x<0 );
 
-        if ( x%z==y ) {
+while ( x>=z ) {
 
-            t = z;
+    if ( x%z==y ) t = z;
 
-        }
+    z++;
 
-        z++;
+}
 
-    }
+cout << endl << "t=" << t;
 
-    cout << endl << "t=" << t;
-
-    return 0;
+return 0;
 }

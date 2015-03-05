@@ -4,33 +4,28 @@ using namespace std;
 
 int main() {
 
-    float x, y;
+float x, y;
 
-    do {
+do {
 
-         cout << "x= "; cin >> x;
+     cout << "x= ";
+     cin >> x;
 
-    }
-    while ( x<0 );
+}
+while ( x<0 );
 
-    y = floor(x);
-    x -=y;
+y = floor(x);
+x -= y;
 
-    while ( x!=floor(x) ) {
+while ( x!=floor(x) ) {
 
-        x *= 10;
+    x *= 10;
 
-    }
+}
 
-    if ( x==y ) {
+if ( x==y ) cout << "1";
+else cout << "2";
 
-        cout << "1";
-
-    }
-    else {
-
-        cout << "2";
-
-    }
+return 0;
 
 }

@@ -3,29 +3,32 @@ using namespace std;
 
 int main() {
 
-    int x, d=2;
+int x, d=2;
 
-    do {
+do {
 
-        cout << "x= "; cin >> x;
+    cout << "x= ";
+    cin >> x;
 
-    }
-    while ( x<=0 );
+}
+while ( x<=0 );
 
-    cout << endl << "x=" << x << endl << endl;
+cout << endl << "x=" << x << endl;
 
-    while ( x>=d ) {
+while ( x>=d ) {
 
-        while ( x%d==0 ) {
+    while ( x%d==0 ) {
 
-            x /= d;
-            cout << x;
-
-        }
-
-        d++;
+        x /= d;
+        cout << "d=" << d;
+        cout << "x=" << x << endl;
 
     }
 
-    return 0;
+    d++;
+
+}
+
+return 0;
+
 }

@@ -3,22 +3,24 @@ using namespace std;
 
 int main() {
 
-    int x, y=0;
+int x, y=0;
 
-    do {
+do {
 
-        cout << "x= "; cin >> x;
+    cout << "x= ";
+    cin >> x;
 
-    }
-    while ( x<0 );
+}
+while ( x<0 );
 
-    while ( x>y ) {
+while ( x>y ) {
 
-        y = y*10 + 9 - x%10;
+    y = y*10 + 9 - x%10;
 
-    }
+}
 
-    cout << endl << "y=" << y;
+cout << endl << "y=" << y;
 
-    return 0;
+return 0;
+
 }

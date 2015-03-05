@@ -3,20 +3,23 @@ using namespace std;
 
 int main() {
 
-    int n, c=0;
+int n, c=0;
 
-    do {
+do {
 
-         cout << "n= "; cin >> n;
+    cout << "n= ";
+    cin >> n;
 
-    }
-    while ( n<0 );
+}
+while ( n<0 );
 
-    for ( int i=1; i<=n; i++) {
+for ( int i=1; i<=n; i++) {
 
-        c = (c+1)%10;
-        cout << c;
+    c = (c+1)%10;
+    cout << c;
 
-    }
+}
+
+return 0;
 
 }

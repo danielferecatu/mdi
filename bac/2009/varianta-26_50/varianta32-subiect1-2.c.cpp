@@ -3,33 +3,38 @@ using namespace std;
 
 int main() {
 
-    int a, b, c;
+int a, b;
 
-    do {
+do {
 
-        cout << "a= "; cin >> a;
-        cout << "b= "; cin >> b;
-        cout << endl;
+    cout << "a= ";
+    cin >> a;
 
-    }
-    while ( a<0 || b<0 );
+    cout << "b= ";
+    cin >> b;
 
-    if ( a>b ) {
+}
+while ( a<0 || b<0 );
 
-        c = b;
-        b = a;
-        a = c;
+if ( a>b ) {
 
-    }
+	int t;
 
-    while ( a<=b ) {
+    t = b;
+    b = a;
+    a = t;
 
-        cout << a;
-        a *= 2;
+}
 
-    }
+while ( a<=b ) {
 
-    cout << endl << "a=" << a;
+    cout << a;
+    a *= 2;
 
-    return 0;
+}
+
+cout << endl << "a=" << a;
+
+return 0;
+
 }

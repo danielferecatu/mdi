@@ -3,34 +3,40 @@ using namespace std;
 
 int main() {
 
-    int n, k, nr=0, p=1;
+int n, k, nr=0, p=1, c;
 
-    do {
+do {
 
-        cout << "n= "; cin >> n;
-        cout << "k= "; cin >> k;
+    cout << "n= ";
+    cin >> n;
+    
+    cout << "k= ";
+    cin >> k;
 
-    }
-    while ( n<0 || k>9 );
+}
+while ( n<0 || k>9 );
 
-    while ( n!=0 ) {
+while ( n!=0 ) {
 
-        int c = n%10;
-        nr +=c*p;
+    c = n%10;
+    nr += c*p;
+    p *= 10;
+
+    if ( c==k ) {
+
+        nr += c*p;
         p *= 10;
 
-        if ( c==k ) {
-
-            nr += c*p;
-            p *= 10;
-
-        }
-
-        n /= 10;
-
     }
 
-    cout << endl << "n=" << n;
+    n /= 10;
 
-    return 0;
+}
+
+n = nr;
+
+cout << endl << "n=" << n;
+
+return 0;
+
 }

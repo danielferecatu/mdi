@@ -3,32 +3,30 @@ using namespace std;
 
 int main() {
 
-    int n, nr=0, p=1;
+int n, nr=0, p=1, c;
 
-    do {
+do {
 
-        cout << "n= "; cin >> n;
+    cout << "n= ";
+    cin >> n;
 
-    }
-    while ( n<0 );
+}
+while ( n<0 );
 
-    while ( n!=0 ) {
+while ( n!=0 ) {
 
-        int c = n%10;
+    c = n%10;
 
-        if ( c>0 && c<9 ) {
+    if ( c>0 && c<9 )  c++;
 
-            c++;
+    nr += c*p;
+    p *= 10;
+    n /= 10;
 
-        }
+}
 
-        nr += c*p;
-        p *= 10;
-        n /= 10;
+cout << endl << "nr=" << nr;
 
-    }
+return 0;
 
-    cout << endl << "nr=" << nr;
-
-    return 0;
 }

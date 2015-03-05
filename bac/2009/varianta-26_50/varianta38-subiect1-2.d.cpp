@@ -3,29 +3,28 @@ using namespace std;
 
 int main() {
 
-    int n;
+int n, p;
 
-    do {
+do {
 
-        cout << "n= "; cin >> n;
-        cout << endl;
+    cout << "n= ";
+    cin >> n;
 
-    }
-    while ( n<0 );
+}
+while ( n<0 );
 
-    for ( int i=1; i<=n; i++ ) {
+for ( int i=1; i<=n; i++ ) {
 
-        int p =1;
+    p = 1;
 
-        for ( int j=i; j>=2; j-- ) {
-
-            p *=j;
-
-        }
-
-        cout << p/(i*2);
-
+    for ( int j=i; j>=2; j-- ) {
+        p *= j;
     }
 
-    return 0;
+    cout << p/(i*2);
+
+}
+
+return 0;
+
 }

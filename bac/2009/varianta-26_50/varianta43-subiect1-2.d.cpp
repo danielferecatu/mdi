@@ -3,32 +3,28 @@ using namespace std;
 
 int main() {
 
-    int x, y;
+int x, y;
 
-    do {
+do {
 
-        cout << "x= "; cin >> x;
-        cout << "y= "; cin >> y;
+    cout << "x= ";
+    cin >> x;
+    
+    cout << "y= ";
+    cin >> y;
 
-    }
-    while ( x<0 || y<0 );
+}
+while ( x<0 || y<0 );
 
-    while ( x*y!=0 ) {
+while ( x*y!=0 ) {
 
-        if ( x>y ) {
+    if ( x>y ) x %= y;
+    else y %=x;
 
-            x %= y;
+}
 
-        }
-        else {
+cout << endl << "x+y=" << x+y;
 
-            y %=x;
+return 0;
 
-        }
-
-    }
-
-    cout << endl << "x+y=" << x+y;
-
-    return 0;
 }

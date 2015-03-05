@@ -3,25 +3,29 @@ using namespace std;
 
 int main() {
 
-    int x, y, z;
+int x, y, z;
 
-    do {
+do {
 
-        cout << "x= "; cin >> x;
-        cout << "y= "; cin >> y;
+    cout << "x= ";
+    cin >> x;
 
-    }
-    while ( x<0 || y<0 );
+    cout << "y= ";
+    cin >> y;
 
-    while ( y>0 ) {
+}
+while ( x<0 || y<0 );
 
-        z = x%y;
-        x = 2*y;
-        y = 2*z;
+while ( y>0 ) {
 
-    }
+    z = x%y;
+    x *= 2;
+    y *= 2;
 
-    cout << endl << "x=" << x;
+}
 
-    return 0;
+cout << endl << "x=" << x;
+
+return 0;
+
 }

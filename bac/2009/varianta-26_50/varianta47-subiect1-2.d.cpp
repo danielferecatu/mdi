@@ -3,29 +3,31 @@ using namespace std;
 
 int main() {
 
-    int n, maxim=0;
+int n, maxim=0;
 
-    do {
+do {
 
-        cout << "n= "; cin >> n;
+    cout << "n= ";
+    cin >> n;
+
+}
+while ( n<=0 );
+
+do {
+
+    n /= 10;
+
+    if ( maxim<n%10 ) {
+
+        maxim = n%10;
 
     }
-    while ( n<=0 );
 
-    do {
+}
+while ( n!=0 );
 
-        n /= 10;
+cout << endl << "maxim=" << maxim;
 
-        if ( maxim<n%10 ) {
+return 0;
 
-            maxim = n%10;
-
-        }
-
-    }
-    while ( n==0 );
-
-    cout << endl << "maxim=" << maxim;
-
-    return 0;
 }

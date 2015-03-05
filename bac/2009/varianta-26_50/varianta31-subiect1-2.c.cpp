@@ -3,25 +3,27 @@ using namespace std;
 
 int main() {
 
-    int a, b, k=0;
+int a, b, k=0;
 
-    do {
+do {
 
-        cout << "a= "; cin >> a;
+    cout << "a= ";
+    cin >> a;
 
-    }
-    while ( a<0 );
+}
+while ( a<=0 );
 
-    b = (a+1)*(a+2)/2;
+b = (a+1)*(a+2)/2;
 
-    while ( b<=a ) {
+while ( b>=a ) {
 
-        b -= a;
-        k++;
+    b -= a;
+    k++;
 
-    }
+}
 
-    cout << endl << "b=" << b << endl << "k=" << k;
+cout << endl << "b=" << b << endl << "k=" << k;
 
-    return 0;
+return 0;
+
 }

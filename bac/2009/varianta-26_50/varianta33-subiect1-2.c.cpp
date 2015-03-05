@@ -3,34 +3,30 @@ using namespace std;
 
 int main() {
 
-    int a, n, j=3;
+int a, n, j=3;
 
-    do {
+do {
 
-        cout << "a= "; cin >> a;
-        cout << "n= "; cin >> n;
+    cout << "a= ";
+    cin >> a;
 
-    }
-    while ( a<0 || n<0 );
+    cout << "n= ";
+    cin >> n;
 
-    for ( int i=1; i<=n; i++ ) {
+}
+while ( a<0 || n<0 );
 
-        if ( i%2==0 ) {
+for ( int i=1; i<=n; i++ ) {
 
-            a -= j;
+    if ( i%2==0 ) a -= j;
+    else a += j;
 
-        }
-        else {
+    j = 7-j;
 
-            a += j;
+}
 
-        }
+cout << endl << "a=" << a;
 
-        j = 7-j;
+return 0;
 
-    }
-
-    cout << endl << "a=" << a;
-
-    return 0;
 }

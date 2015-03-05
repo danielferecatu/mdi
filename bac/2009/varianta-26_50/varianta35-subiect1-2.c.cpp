@@ -3,32 +3,34 @@ using namespace std;
 
 int main() {
 
-    int x, s=0, f=2;
+int x, s=0, f=2, p;
 
-    do {
+do {
 
-        cout << "x= "; cin >> x;
+    cout << "x= ";
+    cin >> x;
 
-    }
-    while ( x<0 );
+}
+while ( x<0 );
 
-    while ( x>1 ) {
+while ( x>1 ) {
 
-        int p=0;
+    p=0;
 
-        while ( x%f==0 ) {
+    while ( x%f==0 ) {
 
-            x /= f;
-            p++;
-
-        }
-
-        s += p;
-        f++;
+        x /= f;
+        p++;
 
     }
 
-    cout << endl << "s=" << s;
+    s += p;
+    f++;
 
-    return 0;
+}
+
+cout << endl << "s=" << s;
+
+return 0;
+
 }
