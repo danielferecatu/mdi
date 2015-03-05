@@ -3,34 +3,35 @@ using namespace std;
 
 int main() {
 
-    int n, s=10;
+int n, s=10;
 
-    do {
+do {
 
-        cout << "n= "; cin >> n;
+    cout << "n= ";
+    cin >> n;
+
+}
+while ( n<0 );
+
+while ( n>0 ) {
+
+    if ( n%10<s ) {
+
+        s = n%10;
 
     }
-    while ( n<0 );
+    else {
 
-    while ( n>0 ) {
-
-        if ( n%10<s ) {
-
-            s = n%10;
-
-        }
-        else {
-
-            s = -1;
-
-        }
-
-        n = n/10;
+        s = -1;
 
     }
 
-    cout << endl << "s=" << s;
+    n /= 10;
 
-    return 0;
+}
+
+cout << endl << "s=" << s;
+
+return 0;
 
 }

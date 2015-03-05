@@ -3,41 +3,48 @@ using namespace std;
 
 int main() {
 
-    int a, b, n;
+int a, b, n;
 
-    do {
-        cout << "a= "; cin >> a;
-        cout << "b= "; cin >> b;
-        cout << "n= "; cin >> n;
-    }
-    while ( a<0 || b<0 || n<0 );
+do {
+    cout << "a= ";
+    cin >> a;
 
-    if ( b==0 ) {
+    cout << "b= ";
+    cin >> b;
 
-        cout << "gresit";
+    cout << "n= ";
+    cin >> n;
+}
+while ( a<0 || b<0 || n<0 );
 
-    }
-    else {
+if ( b==0 ) {
 
-        cout << a/b;
+    cout << "gresit";
 
-        if ( n>0 && a%b!=0 ) {
+}
+else {
 
-            cout << ",";
-            a %= b;
-            int i = 0;
+    cout << a/b;
 
-            do {
+    if ( n>0 && a%b!=0 ) {
 
-                cout << a*10/b;
-                a = a*10/b;
-                i++;
+        cout << ",";
+        a %= b;
+        int i = 0;
 
-            }
-            while ( i==n || a==0 );
+        do {
+
+            cout << a*10/b;
+            a = a*10/b;
+            i++;
 
         }
+        while ( i!=n || a!=0 );
 
     }
+
+}
+
+return 0;
 
 }

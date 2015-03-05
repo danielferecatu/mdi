@@ -3,39 +3,38 @@ using namespace std;
 
 int main() {
 
-    int x, n=0, y, c;
+int x, n=0, y, c;
 
-    do {
+do {
 
-        cout << "x= "; cin >> x;
+    cout << "x= ";
+    cin >> x;
 
-    }
-    while ( x<0 );
+}
+while ( x<0 );
 
-    while ( x!=0 ) {
+while ( x!=0 ) {
 
-        y=x;
-        c=0;
+    y = x;
+    c = 0;
 
-        while ( y>0 ) {
+    while ( y>0 ) {
 
-            if ( y%10>c ) {
+        if ( y%10>c ) c = y%10;
 
-                c = y%10;
-
-            }
-
-            y = y/10;
-
-        }
-
-        n = n*10+c;
-        cout << "x= "; cin >> x;
+        y /= 10;
 
     }
 
-    cout << endl << "n=" << n;
+    n = n*10+c;
 
-    return 0;
+    cout << "x= ";
+    cin >> x;
+
+}
+
+cout << endl << "n=" << n;
+
+return 0;
 
 }

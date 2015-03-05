@@ -3,31 +3,32 @@ using namespace std;
 
 int main() {
 
-    int n;
+int n;
 
-    do {
+do {
 
-        cout << "n= "; cin >> n;
+    cout << "n= ";
+    cin >> n;
 
-    }
-    while ( n<=0 );
+}
+while ( n<=0 );
 
-    for ( int i=1; i<=n-1; i++) {
+for ( int i=1; i<n; i++) {
 
-        if ( i%2==0 ) {
+    if ( i%2==0 ) {
 
-            cout << "#";
-
-        }
-
-        for ( int j=i+1; j<=n; j++) {
-
-            cout << "*";
-
-        }
+        cout << "#";
 
     }
 
-    return 0;
+    for ( int j=i+1; j<=n; j++) {
+
+        cout << "*";
+
+    }
+
+}
+
+return 0;
 
 }

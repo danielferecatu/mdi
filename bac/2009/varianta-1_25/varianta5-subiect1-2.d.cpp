@@ -3,37 +3,45 @@ using namespace std;
 
 int main() {
 
-    int x, y=0, z;
+int x, y=0, z;
 
-    cout << "x= "; cin >> x;
-    cout << "z= "; cin >> z;
+do {
 
-    do {
+    cout << "x= ";
+    cin >> x;
 
-        y = y*10+x%10;
-        x = x/100;
+    cout << "z= ";
+    cin >> z;
 
-    }
-    while ( x!=0 );
+}
+while ( x<0 || z<0 );
 
-    while ( y*z>0 && y%10==z%10 ) {
+do {
 
-        y = y/10;
-        z = z/10;
+    y = y*10 + x%10;
+    x /= 100;
 
-    }
+}
+while ( x!=0 );
 
-    if ( y+z==0 ) {
+while ( y*z>0 && y%10==z%10 ) {
 
-        cout << endl << 1;
+    y /= 10;
+    z /= 10;
 
-    }
-    else {
+}
 
-        cout << endl << 0;
+if ( y+z==0 ) {
 
-    }
+    cout << endl << 1;
 
-    return 0;
+}
+else {
+
+    cout << endl << 0;
+
+}
+
+return 0;
 
 }

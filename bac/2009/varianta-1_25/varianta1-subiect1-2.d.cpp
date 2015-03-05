@@ -3,32 +3,32 @@ using namespace std;
 
 int main() {
 
-    int n, z=0, p=1, c;
+int n, z=0, p=1, c;
 
-    do {
+do {
 
-        cout << "n= ";
-        cin >> n;
+    cout << "n= ";
+    cin >> n;
 
-    }
-    while ( n<0 );
+}
+while ( n<0 );
 
-    while ( n>0 ) {
+while ( n>0 ) {
 
-        c = n%10;
-        n = n/10;
+    c = n%10;
+    n = n/10;
 
-        if ( c%3==0 ) {
+    if ( c%3==0 ) {
 
-            z = z+p*(9-c);
-            p = p*10;
-
-        }
+        z += p*(9-c);
+        p *= 10;
 
     }
 
-    cout << endl << "z=" << z;
+}
 
-    return 0;
+cout << endl << "z=" << z;
+
+return 0;
 
 }

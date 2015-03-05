@@ -3,29 +3,32 @@ using namespace std;
 
 int main() {
 
-    int a, b;
+int a, b;
 
-    cout << "a= "; cin >> a;
-    cout << "b= "; cin >> b;
+cout << "a= ";
+cin >> a;
 
-    if ( a<b ) {
+cout << "b= ";
+cin >> b;
 
-        a = a+b;
-        b = a-b;
-        a = a-b;
+if ( a<b ) {
+
+    a = a+b;
+    b = a-b;
+    a = a-b;
+
+}
+
+for ( int x=a; x<=b; x-- ) {
+
+    if ( x%2!=0 ) {
+
+        cout << x << " ";
 
     }
 
-    for ( int x=a; x<=b; x-- ) {
+}
 
-        if ( x%2!=0 ) {
-
-            cout << x << " ";
-
-        }
-
-    }
-
-    return 0;
+return 0;
 
 }

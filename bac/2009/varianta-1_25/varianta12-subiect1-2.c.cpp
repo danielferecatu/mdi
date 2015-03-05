@@ -3,31 +3,34 @@ using namespace std;
 
 int main() {
 
-    int x, y=0;
+int x, y=0;
 
-    do {
+do {
 
-        cout << "x= "; cin >> x;
+    cout << "x= ";
+    cin >> x;
 
-    }
-    while ( x<0 );
+}
+while ( x<0 );
 
 
-    while ( x!=0 ) {
+while ( x!=0 ) {
 
-        while ( x>9 ) {
+    while ( x>9 ) {
 
-            x = x/10;
-
-        }
-
-        y = y*10+x;
-        cout << "x= "; cin >> x;
+        x /= 10;
 
     }
 
-    cout << endl << "y=" << y << endl;
+    y = y*10+x;
 
-    return 0;
+    cout << "x= ";
+    cin >> x;
+
+}
+
+cout << endl << "y=" << y;
+
+return 0;
 
 }

@@ -3,29 +3,36 @@ using namespace std;
 
 int main() {
 
-    int n, s=-1;
+int n, s=-1;
 
-    cout << "n= "; cin >> n;
+do {
 
-    while ( n>0 ) {
+    cout << "n= ";
+    cin >> n;
 
-        if (n%10>s) {
+}
+while ( n<0 );
 
-            s = n%10;
 
-        }
-        else {
+while ( n>0 ) {
 
-            s = 11;
+    if (n%10>s) {
 
-        }
+        s = n%10;
 
-        n=n/10;
+    }
+    else {
+
+        s = 11;
 
     }
 
-    cout << endl << "s=" << s;
+    n /= 10;
 
-    return 0;
+}
+
+cout << endl << "s=" << s;
+
+return 0;
 
 }
