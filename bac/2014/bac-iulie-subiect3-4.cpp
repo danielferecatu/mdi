@@ -24,11 +24,12 @@ while(!f.eof()) {
 
 }
 
-for (int i=1; i<=100; i++) {
+int maxim=0;
+for (int i=10; i<=99; i++)
+    if (frecv[i]>maxim) maxim = frecv[i];
 
-    if(frecv[i]>2) cout << i << " ";
-
-}
+for (int i=10; i<=99; i++)
+    if(frecv[i]==maxim) cout << i << " ";
 
 f.close();
 
