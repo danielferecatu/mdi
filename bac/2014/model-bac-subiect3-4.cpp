@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-ifstream f("bac.txt");
+ifstream f("model-bac.txt");
 
 int main() {
 
