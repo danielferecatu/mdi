@@ -3,22 +3,19 @@ using namespace std;
 
 int triplete(int n) {
 
-// x < y < z
-// x*y + y*z = n
 int x=0, y=1, z=n;
 
-
-
-// afisare
-if (x<y && y<z && (x*y+y*z==n)) {
-    cout<<"("<<x<<","<<y<<","<<z<<")"<<endl;
-}
+for (int i=x; i<=n; i++)
+    for (int j=i; j<=n; j++)
+        for (int k=j; k<=n; k++)
+            if (i*j+j*k==n)
+                cout<<"("<<i<<","<<j<<","<<k<<")"<<endl;
 
 }
 
 int main() {
 
-// apelare
+
 triplete(8);
 
 return 0;
