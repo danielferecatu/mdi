@@ -14,7 +14,7 @@ while(!f.eof()) {
 
     while(numar>9) {
 
-        subn = numar%10 + numar/10%10*10;
+        subn = numar%100;
 
         frecv[subn]++;
 

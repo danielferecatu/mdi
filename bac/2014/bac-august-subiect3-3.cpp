@@ -16,7 +16,7 @@ for (int i=x; i<=n; i++)
 int main() {
 
 
-triplete(8);
+triplete(160);
 
 return 0;
 
