@@ -7,11 +7,8 @@ int n=0, a, b, c, x;
 
 do {
 
-    do {
-        cout << "x= ";
-        cin >> x;
-    }
-    while (x<0);
+    cout << "x= ";
+    cin >> x;
 
     a = 0;
     b = 1;

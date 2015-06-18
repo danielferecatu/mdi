@@ -5,11 +5,10 @@ int main() {
 
 int a, b=0, p=1, c;
 
-do {
-    cout << "a= ";
-    cin >> a;
-}
-while ( a<0 );
+
+cout << "a= ";
+cin >> a;
+
 
 while ( a>0 ) {
 

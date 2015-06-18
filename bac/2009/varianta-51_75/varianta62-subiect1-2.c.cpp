@@ -5,13 +5,10 @@ int main() {
 
 int x, aux, t;
 
-do {
 
-    cout << "x= ";
-    cin >> x;
+cout << "x= ";
+cin >> x;
 
-}
-while ( x<0 );
 
 aux = x;
 t = 1;

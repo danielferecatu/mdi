@@ -5,15 +5,13 @@ int main() {
 
 int n, d, b=0, v=0, x;
 
-do {
-    cout << "n= ";
-    cin >> n;
 
-    cout << "d= ";
-    cin >> d;
+cout << "n= ";
+cin >> n;
 
-}
-while ( n<=0 || d<=0 );
+cout << "d= ";
+cin >> d;
+
 
 for (int i=1; i<=n; i++) {
 

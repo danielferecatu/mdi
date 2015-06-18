@@ -5,11 +5,10 @@ int main() {
 
 int n, a[20][20]={0};
 
-do {
-    cout << "Numarul de linii: ";
-    cin >> n;
-}
-while ( n<=2 && n>=20 );
+
+cout << "Numarul de linii: ";
+cin >> n;
+
 
 for (int i=0; i<n; i++)
     a[i][n-1-i] = n;

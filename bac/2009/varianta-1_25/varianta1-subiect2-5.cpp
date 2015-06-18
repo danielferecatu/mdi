@@ -5,18 +5,15 @@ int main() {
 
 int m, n, A[10][10], i, j;
 
-do {
 
-    cout << "Linii n: ";
-    cin >> n;
+cout << "Linii n: ";
+cin >> n;
 
-    cout << "Coloane m: ";
-    cin >> m;
+cout << "Coloane m: ";
+cin >> m;
 
-    cout << endl;
+cout << endl;
 
-}
-while ( m>10 || m<2 || n>10 || n<2 );
 
 for ( i=1; i<=n; i++ )
     for ( j=1; j<=m; j++ ) {

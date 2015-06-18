@@ -5,12 +5,10 @@ int main() {
 
 int n, a[40][40];
 
-do {
-    cout << "n= ";
-    cin >> n;
 
-}
-while ( n<=2 || n>=40 );
+cout << "n= ";
+cin >> n;
+
 
 cout << endl;
 

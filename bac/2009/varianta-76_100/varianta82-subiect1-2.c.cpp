@@ -5,17 +5,13 @@ int main() {
 
 int m, n, x, aux, ok;
 
-do {
-    cout << "m= ";
-    cin >> m;
-}
-while ( m<0 && m>=10 );
 
-do {
-    cout << "n= ";
-    cin >> n;
-}
-while ( n<=1 );
+cout << "m= ";
+cin >> m;
+
+cout << "n= ";
+cin >> n;
+
 
 for (int i=1; i<=n; i++) {
 

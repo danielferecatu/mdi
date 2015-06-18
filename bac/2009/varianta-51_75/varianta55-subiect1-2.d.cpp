@@ -5,21 +5,13 @@ int main() {
 
 int n, a, b, k=0;
 
-do {
 
-    cout << "n= ";
-    cin >> n;
+cout << "n= ";
+cin >> n;
 
-}
-while ( n<=0 );
+cout << "a= ";
+cin >> a;
 
-do {
-
-    cout << "a= ";
-    cin >> a;
-
-}
-while ( a<0 );
 
 for ( int i=2; i<=n; i++ ) {
 

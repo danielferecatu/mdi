@@ -7,10 +7,8 @@ int x, s;
 
 for (int i=1; i<=3; i++) {
 
-    do {
-        cout << "x= "; cin >> x;
-    }
-    while ( x<0 );
+    cout << "x= ";
+    cin >> x;
 
     s = 0;
 

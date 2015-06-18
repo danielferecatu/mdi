@@ -5,13 +5,10 @@ int main() {
 
 int n, a[25][25];
 
-do {
 
-    cout << "n= ";
-    cin >> n;
+cout << "n= ";
+cin >> n;
 
-}
-while ( n<=2 || n>=25 );
 
 cout << endl;
 

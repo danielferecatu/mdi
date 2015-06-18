@@ -6,12 +6,10 @@ int main() {
 int n, nr=0, y=0;
 float x;
 
-do {
 
-    cout << "n= "; cin >> n;
+cout << "n= ";
+cin >> n;
 
-}
-while ( n<=0 );
 
 for (int i=1; i<=n; i++) {
 

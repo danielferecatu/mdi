@@ -5,13 +5,10 @@ int main() {
 
 int n, a, m, b;
 
-do {
 
-    cout << "n= ";
-    cin >> n;
+cout << "n= ";
+cin >> n;
 
-}
-while ( n<0 );
 
 a = n%10;
 m = a;

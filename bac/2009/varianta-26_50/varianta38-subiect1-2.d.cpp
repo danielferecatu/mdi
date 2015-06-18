@@ -5,13 +5,10 @@ int main() {
 
 int n, p;
 
-do {
 
-    cout << "n= ";
-    cin >> n;
-
-}
-while ( n<0 );
+cout << "n= ";
+cin >> n;
+    
 
 for ( int i=1; i<=n; i++ ) {
 

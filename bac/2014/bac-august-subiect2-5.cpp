@@ -5,16 +5,13 @@ int main() {
 
 int m, n, A[20][20];
 
-do {
 
-    cout << "m= ";
-    cin >> m;
+cout << "m= ";
+cin >> m;
 
-    cout << "n=";
-    cin >> n;
+cout << "n=";
+cin >> n;
 
-}
-while ( m<2 || m>50 || n<2 || n>50 );
 
 int p=1;
 for (int i=0; i<m; i++)

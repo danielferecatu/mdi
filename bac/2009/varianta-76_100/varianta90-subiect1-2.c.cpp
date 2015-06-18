@@ -5,14 +5,16 @@ int main() {
 
 int a, b, c, k, t, p=0;
 
-do {
 
-    cout << "a= "; cin >> a;
-    cout << "b= "; cin >> b;
-    cout << "c= "; cin >> c;
+cout << "a= ";
+cin >> a;
 
-}
-while ( a<0 || b<0 || c<0 );
+cout << "b= ";
+cin >> b;
+
+cout << "c= ";
+cin >> c;
+
 
 t = a;
 

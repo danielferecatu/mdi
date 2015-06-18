@@ -5,16 +5,12 @@ int main() {
 
 int m, n, A[10][10];
 
-do {
+cout<<"Dati numarul de linii: ";
+cin >>n;
 
-    cout<<"Dati numarul de linii: ";
-    cin >>n;
+cout<<"Dati numarul de coloane: ";
+cin >>m;
 
-    cout<<"Dati numarul de coloane: ";
-    cin >>m;
-
-}
-while ( m<2 || m>10 || n<2 || n>10 );
 
 for (int i=1; i<=n; i++)
     for (int j=1; j<=m; j++) {

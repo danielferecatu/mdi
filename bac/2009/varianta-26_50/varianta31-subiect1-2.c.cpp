@@ -5,13 +5,10 @@ int main() {
 
 int a, b, k=0;
 
-do {
 
-    cout << "a= ";
-    cin >> a;
+cout << "a= ";
+cin >> a;
 
-}
-while ( a<=0 );
 
 b = (a+1)*(a+2)/2;
 

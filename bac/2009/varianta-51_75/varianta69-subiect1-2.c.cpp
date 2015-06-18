@@ -5,16 +5,13 @@ int main() {
 
 int x, y, t=0, u=1, z;
 
-do {
 
-    cout << "x= ";
-    cin >> x;
+cout << "x= ";
+cin >> x;
 
-    cout << "y= ";
-    cin >> y;
+cout << "y= ";
+cin >> y;
 
-}
-while ( x<=0 || y<=0 );
 
 do {
 

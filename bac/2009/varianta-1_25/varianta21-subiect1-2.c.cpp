@@ -5,17 +5,16 @@ int main() {
 
 int a, b, n;
 
-do {
-    cout << "a= ";
-    cin >> a;
 
-    cout << "b= ";
-    cin >> b;
+cout << "a= ";
+cin >> a;
 
-    cout << "n= ";
-    cin >> n;
-}
-while ( a<0 || b<0 || n<0 );
+cout << "b= ";
+cin >> b;
+
+cout << "n= ";
+cin >> n;
+
 
 if ( b==0 ) {
 

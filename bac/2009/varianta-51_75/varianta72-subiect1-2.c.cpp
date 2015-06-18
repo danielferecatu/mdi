@@ -5,14 +5,11 @@ int main() {
 
 int n, b, j;
 
-do {
 
-    cout << "n= ";
-    cin >> n;
-    cout << endl;
+cout << "n= ";
+cin >> n;
+cout << endl;
 
-}
-while ( n<=0 );
 
 for (int i=1; i<=2*n-1; i++) {
 

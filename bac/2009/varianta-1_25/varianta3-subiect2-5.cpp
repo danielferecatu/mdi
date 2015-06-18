@@ -5,13 +5,10 @@ int main() {
 
 int n, a[24][24];
 
-do {
 
-    cout << "Dati numarul de linii si de coloane: ";
-    cin >> n;
+cout << "Dati numarul de linii si de coloane: ";
+cin >> n;
 
-}
-while ( n<2 || n>24 );
 
 cout << endl;
 

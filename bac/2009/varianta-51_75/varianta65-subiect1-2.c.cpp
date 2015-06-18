@@ -5,13 +5,10 @@ int main() {
 
 int n, m=0, c, v, u;
 
-do {
 
-    cout << "n= ";
-    cin >> n;
+cout << "n= ";
+cin >> n;
 
-}
-while ( n<=0 || n>10000 );
 
 v = n;
 u = n%10;

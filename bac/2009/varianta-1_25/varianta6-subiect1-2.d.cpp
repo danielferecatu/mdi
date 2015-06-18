@@ -5,13 +5,9 @@ int main() {
 
 int n, s=-1;
 
-do {
 
-    cout << "n= ";
-    cin >> n;
-
-}
-while ( n<0 );
+cout << "n= ";
+cin >> n;
 
 
 while ( n>0 ) {

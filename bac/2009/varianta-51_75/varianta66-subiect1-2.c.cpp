@@ -7,8 +7,7 @@ int n=0, x;
 
 do {
 
-    do cin >> x;
-    while ( x<0 );
+    cin >> x;
 
     if ( x!=0 ) {
 

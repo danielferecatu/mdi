@@ -5,11 +5,10 @@ int main() {
 
 int n, a[10][10]={0};
 
-do {
-    cout << "Nr de linii: ";
-    cin >> n;
-}
-while ( n<=2 || n>=10 );
+
+cout << "Nr de linii: ";
+cin >> n;
+
 
 for (int i=1; i<=n; i++)
     for (int j=1; j<=n; j++) {

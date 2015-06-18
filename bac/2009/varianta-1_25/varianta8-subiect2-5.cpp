@@ -5,16 +5,13 @@ int main() {
 
 int n, p, a[15][15];
 
-do {
 
-    cout<<"Dati numarul de linii: ";
-    cin >>n;
+cout<<"Dati numarul de linii: ";
+cin >>n;
 
-    cout<<"Dati numarul de coloane: ";
-    cin >>p;
+cout<<"Dati numarul de coloane: ";
+cin >>p;
 
-}
-while( n<2 || n>15 || p<1 || p>15 );
 
 int pp=1;
 

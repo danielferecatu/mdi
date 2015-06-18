@@ -5,16 +5,13 @@ int main() {
 
 int m, n, a[10][10];
 
-do {
 
-    cout<<"Dati numarul de linii: ";
-    cin >>m;
+cout<<"Dati numarul de linii: ";
+cin >>m;
 
-    cout<<"Dati numarul de coloane: ";
-    cin >>n;
+cout<<"Dati numarul de coloane: ";
+cin >>n;
 
-}
-while ( m>10 || n>10 );
 
 // citire
 for (int i=0; i<m; i++)

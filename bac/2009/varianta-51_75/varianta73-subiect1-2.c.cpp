@@ -5,14 +5,16 @@ int main() {
 
 int a, b, p, nr=0, x;
 
-do {
 
-    cout << "a="; cin >> a;
-    cout << "b="; cin >> b;
-    cout << "p="; cin >> p;
+cout << "a=";
+cin >> a;
 
-}
-while ( a<=0 || b<=0 || p<=0 || a>b );
+cout << "b=";
+cin >> b;
+
+cout << "p=";
+cin >> p;
+
 
 for (int i=a; i<=b; i++) {
 

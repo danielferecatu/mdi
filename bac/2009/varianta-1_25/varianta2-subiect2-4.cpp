@@ -5,15 +5,12 @@ int main() {
 
 int m, n, a[10][10], k, l;
 
-do {
 
-    cout << "Linii n: ";
-    cin >> n;
+cout << "Linii n: ";
+cin >> n;
 
-    cout << endl;
+cout << endl;
 
-}
-while ( n>10 || n<2 );
 
 for ( k=0; k<n; k++ ) {
 

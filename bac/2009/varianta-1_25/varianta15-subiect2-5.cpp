@@ -5,13 +5,10 @@ int main() {
 
 int n, a[6][6];
 
-do {
 
-    cout << "n= ";
-    cin >> n;
+cout << "n= ";
+cin >> n;
 
-}
-while ( n<=9999 || n>99999 );
 
 cout << endl;
 

@@ -7,10 +7,9 @@ int a=0, k=0, x;
 
 do {
 
-    do {
-        cout << "x= "; cin >> x;
-    }
-    while ( x<0 );
+
+    cout << "x= ";
+    cin >> x;
 
     while ( x>99 ) x/= 10;
 

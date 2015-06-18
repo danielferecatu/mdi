@@ -5,16 +5,13 @@ int main() {
 
 int a, b;
 
-do {
 
-    cout << "a= ";
-    cin >> a;
-    
-    cout << "b= ";
-    cin >> b;
+cout << "a= ";
+cin >> a;
 
-}
-while ( a<0 || b<0 );
+cout << "b= ";
+cin >> b;
+
 
 a = a/10 % 10*10 + a%10;
 b = b/10 % 10*10 + b%10;
