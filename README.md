@@ -6,8 +6,13 @@ The files in this repo are for learning purposes only. If you use these files in
 
 ## What is this?
 
+### bac
+
 All you can transform in code and drop in C++ from BAC variants.
 
+### fmi
+
+The same as `bac` but with admitere FMI.
 
 NOTE
 
