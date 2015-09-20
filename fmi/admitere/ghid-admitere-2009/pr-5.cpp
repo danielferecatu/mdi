@@ -8,27 +8,22 @@ int n;
 
 // s = suma inca disponibila
 // nr = cate elemente are submultimea curenta
-void bk(int k, int s, int nr) {
+void bk( int k, int s, int nr ) {
 
     if( k>n ) {
-
         if( s==0 ) {
-
             if( nr<minim ) {
-
                 minim = nr;
-                for (int i=0; i<n; i++)
+                for( int i=0; i<n; i++ ) {
                     opt[i] = sol[i];
-
+                }
             }
-
         }
-
     }
     else {
 
         sol[k] = 0;
-        bk(k+1, s, nr);
+        bk( k+1, s, nr );
 
         if( s>=a[k] ) {
             sol[k] = 1;
@@ -59,12 +54,15 @@ cin >> s;
 // generam toate submultimile prin backtracking
 // si o alegem pe cea mai buna
 minim = n+1;
-bk(1, s, 0);
+bk( 1, s, 0 );
 
 // afisare rezultat
 if( minim<=n ) {
-    for (int i=0; i<n; i++)
-        if( opt[i] ) cout << a[i] << " ";
+    for( int i=0; i<n; i++ ) {
+        if( opt[i] ) {
+            cout << a[i] << " ";
+        }
+    }
     cout << endl;
 }
 else {

@@ -9,19 +9,20 @@ a = 19;
 b = 23;
 c = 2;
 
-for (x=a; x<=b; x++) {
+for( x=a; x<=b; x++ ) {
 
     y = x;
 
-    while ( y>0 ) {
-
-        if ( y%10==c) s++;
+    while( y>0 ) {
+        if( y%10==c) {
+            s++;
+        }
         y/= 10;
     }
 
 }
 
-cout << endl << s << endl;
+cout << s << endl;
 
 return 0;
 

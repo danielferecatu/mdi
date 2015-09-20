@@ -9,19 +9,22 @@ int a, b, k=0, nr;
 // a=101
 // a=102
 // a=103
-
 a = 103;
 b = 334;
 
 nr = a;
 
-while ( nr<=b ) {
+while( nr<=b ) {
 
     int aux = nr;
 
-    while ( aux>100 ) aux/= 10;
+    while( aux>100 ) {
+        aux/= 10;
+    }
 
-    if ( nr%100==aux ) k++;
+    if( nr%100==aux ) {
+        k++;
+    }
 
     nr++;
 

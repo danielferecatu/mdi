@@ -1,16 +1,20 @@
 #include <iostream>
 using namespace std;
 
-int fact(int s, int e) {
+int fact( int s, int e ) {
 
-    if( e>=s ) return e*fact(s, e-1);
-    else return 1;
+    if( e>=s ) {
+        return e * fact( s, e-1 );
+    }
+    else {
+        return 1;
+    }
 
 }
 
-int comb(int n, int k) {
+int comb( int n, int k ) {
 
-    return fact(n-k+1, n) / fact(2, k);
+    return fact( n-k+1, n ) / fact( 2, k );
 
 }
 
@@ -26,6 +30,6 @@ cout << "k= ";
 cin >> k;
 
 // afisare rezultat
-cout << endl << "C= " << comb(n, k);
+cout << endl << "C= " << comb( n, k );
 
 }

@@ -11,7 +11,7 @@ cin >> m;
 cout << "n= ";
 cin >> n;
 
-for (x=m; x<=n; x++) {
+for( x=m; x<=n; x++ ) {
 
     y = 0;
     z = x;
@@ -20,9 +20,11 @@ for (x=m; x<=n; x++) {
         y = y*10 + z%10;
         z/= 10;
     }
-    while ( z>0 );
+    while( z>0 );
 
-    if ( x==y ) nr++;
+    if( x==y ) {
+        nr++;
+    }
 
 }
 

@@ -8,7 +8,6 @@ int i=0, v[]={4, 6, 7, 0};
 
 
 do {
-
     x = v[i];
 
     a = 0;
@@ -19,16 +18,17 @@ do {
         a = b;
         b = c;
     }
-    while (c<x);
+    while( c<x );
 
-    if ( x==c ) n++;
+    if( x==c ) {
+        n++;
+    }
 
     i++;
-
 }
-while (x>0);
+while( x>0 );
 
-cout << "n= " << n << endl;
+cout << "n= " << n;
 
 return 0;
 

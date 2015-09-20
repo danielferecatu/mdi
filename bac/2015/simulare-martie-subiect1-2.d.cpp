@@ -13,17 +13,19 @@ cout << "k= ";
 cin >> k;
 
 
-while ( n>=1 ) {
+while( n>=1 ) {
 
-    p=0;
-    m=n;
+    p = 0;
+    m = n;
 
-    while ( m%k==0 ) {
+    while( m%k==0 ) {
         p++;
         m /= k;
     }
 
-    if ( m==1 ) cout << n << " " << p << " ";
+    if( m==1 ) {
+        cout << n << " " << p << " ";
+    }
 
     n--;
 

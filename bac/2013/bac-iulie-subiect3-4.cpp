@@ -11,12 +11,12 @@ long x, y;
 cout << "Dati x: ";
 cin >> x;
 
-while (x) {
+while( x ) {
 
-    if (x==1) {
+    if( x==1 ) {
         y/= 10;
     }
-    else if (x%2) {
+    else if( x%2 ) {
         y = (x+1)/2;
     }
     else {

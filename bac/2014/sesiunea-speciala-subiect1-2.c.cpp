@@ -9,27 +9,25 @@ n = 162543;
 
 m = n;
 
-if ( n>=p*10 ) {
+if( n>=p*10 ) {
 
     do {
-
         c1 = n/p%10;
         c2 = n/(p*10)%10;
 
-        if ( c1>c2 ) {
-
+        if( c1>c2 ) {
             n-= (c1-c2)*p;
             p*= 10;
             n+= (c1-c2)*p;
-
         }
-        else p*= 10;
-
+        else {
+            p*= 10;
+        }
     }
-    while ( n>=p*10 );
+    while( n>=p*10 );
 }
 
-if ( n==m ) cout << "0";
+if( n==m ) cout << "0";
 else cout << n;
 
 return 0;

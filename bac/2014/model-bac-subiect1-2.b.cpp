@@ -10,22 +10,20 @@ a = 1000;
 b = 8765;
 
 int i=a;
-
 do {
-
     int x = i;
-    while ( x>9 && 1+x%10==x/10%10 ) {
 
+    while( x>9 && 1+x%10==x/10%10 ) {
         x/= 10;
-
     }
 
-    if ( x<10 ) nr++;
+    if( x<10 ) {
+        nr++;
+    }
 
     i++;
-
 }
-while ( i<b );
+while( i<b );
 
 cout << "nr= " << nr;
 

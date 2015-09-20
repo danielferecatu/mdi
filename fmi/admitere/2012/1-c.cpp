@@ -11,7 +11,7 @@ bool ok=true;
 cout << "n= ";
 cin >> n;
 
-for (int i=1; i<=n; i++) {
+for( int i=1; i<=n; i++ ) {
 
     cout << "y" << i << " = ";
     cin >> t;
@@ -22,24 +22,26 @@ for (int i=1; i<=n; i++) {
 
 // stabilirea rezultatului
 t=1;
-for (int i=1; i<=t; i++) {
-
-    cout << y[i] << " ";
-
+for( int i=1; i<=t; i++ ) {
     if( y[i]!=i ) {
         ok = false;
         break;
     }
 
-    if( y[i+1] ) t++;
-
+    if( y[i+1] ) {
+        t++;
+    }
 }
 
 cout << endl;
 
 // afisare
-if( ok ) cout << "DA";
-else cout << "NU";
+if( ok ) {
+    cout << "DA";
+}
+else {
+    cout << "NU";
+}
 
 return 0;
 

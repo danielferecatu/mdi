@@ -14,13 +14,14 @@ cin >> b;
 cout << "c= ";
 cin >> c;
 
-for (x=a; x<=b; x++) {
+for( x=a; x<=b; x++ ) {
 
     y = x;
 
-    while ( y>0 ) {
-
-        if ( y%10==c) s++;
+    while( y>0 ) {
+        if( y%10==c) {
+            s++;
+        }
         y/= 10;
     }
 

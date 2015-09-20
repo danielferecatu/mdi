@@ -2,7 +2,7 @@
 using namespace std;
 
 // complexitate timp = O(0)
-bool este_in_H(int a) {
+bool este_in_H( int a ) {
 
 	if( a%2==0 || a%3==0 || a%5==0 ) {
 		return true;

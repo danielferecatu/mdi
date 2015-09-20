@@ -16,13 +16,15 @@ do {
     a = b;
     b = c;
 }
-while (c<x);
+while( c<x );
 
-if ( x==c ) n++;
+if( x==c ) {
+    n++;
+}
 
 i++;
 
-while (x>0) {
+while( x>0 ) {
 
     x = v[i];
 
@@ -34,15 +36,17 @@ while (x>0) {
         a = b;
         b = c;
     }
-    while (c<x);
+    while( c<x );
 
-    if ( x==c ) n++;
+    if( x==c ) {
+        n++;
+    }
 
     i++;
 
 }
 
-cout << "n= " << n << endl;
+cout << "n= " << n;
 
 return 0;
 

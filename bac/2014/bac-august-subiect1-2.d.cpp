@@ -6,7 +6,6 @@ int main() {
 int n=0, a, b, c, x;
 
 do {
-
     cout << "x= ";
     cin >> x;
 
@@ -18,15 +17,16 @@ do {
         a = b;
         b = c;
     }
-    while (c<x);
+    while( c<x );
 
-    if ( x==c ) n++;
-
+    if( x==c ) {
+        n++;
+    }
 }
-while (x>0);
+while( x>0 );
 
 
-cout << endl << "n= " << n << endl;
+cout << endl << "n= " << n;
 
 return 0;
 

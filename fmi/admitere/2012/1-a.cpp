@@ -15,8 +15,10 @@ while( t<n ) {
 
     c++;
 
-    for (int i=1; i<=c; i++) {
-        if( t==n ) { break; }
+    for( int i=1; i<=c; i++ ) {
+        if( t==n ) {
+            break;
+        }
         else {
             cout << c << " ";
             t++;

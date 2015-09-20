@@ -1,21 +1,25 @@
 #include <iostream>
 using namespace std;
 
-bool prim(int n) {
+bool prim( int n ) {
 
-for (int i=2; i<=n/2; i++) {
-    if( n%i==0 ) return false;
+    for( int i=2; i<=n/2; i++ ) {
+        if( n%i==0 ) {
+            return false;
+        }
+    }
+    return true;
+
 }
-return true;
 
-}
+bool verifica( int n ) {
 
-bool verifica(int n) {
-
-for (int i=2; i<=n/2; i++) {
-    if( prim(i) && prim(n-i) ) return true;
-}
-return false;
+    for( int i=2; i<=n/2; i++ ) {
+        if( prim(i) && prim(n-i) ) {
+            return true;
+        }
+    }
+    return false;
 
 }
 

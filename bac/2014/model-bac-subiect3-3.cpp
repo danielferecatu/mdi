@@ -1,18 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int divizor(int n) {
+int divizor( int n ) {
 
-int d=2;
+    int d=2;
 
-for (int i=d; i<=n; i++) {
+    for( int i=d; i<=n; i++ ) {
+        if( n%i==0 && i%d==1 ) {
+            d=i;
+        }
+    }
 
-    if ( n%i==0 && i%d==1 ) d=i;
-
-}
-
-return d;
-
+    return d;
 
 }
 

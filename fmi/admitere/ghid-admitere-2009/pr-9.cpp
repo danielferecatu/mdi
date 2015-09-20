@@ -16,7 +16,9 @@ while( i ) {
     cout << "i= ";
     cin >> i;
 
-    if( i>maxim ) maxim = i;
+    if( i>maxim ) {
+        maxim = i;
+    }
 
 }
 

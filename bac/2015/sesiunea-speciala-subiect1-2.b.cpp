@@ -8,7 +8,7 @@ int n, m, nr=0, x, y, z;
 m = 54321;
 n = 54344;
 
-for (x=m; x<=n; x++) {
+for( x=m; x<=n; x++ ) {
 
     y = 0;
     z = x;
@@ -17,9 +17,11 @@ for (x=m; x<=n; x++) {
         y = y*10 + z%10;
         z/= 10;
     }
-    while ( z>0 );
+    while( z>0 );
 
-    if ( x==y ) nr++;
+    if( x==y ) {
+        nr++;
+    }
 
 }
 

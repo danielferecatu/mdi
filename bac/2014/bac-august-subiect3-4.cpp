@@ -11,20 +11,18 @@ int n, numar, E=0, arr[10000];
 
 f >> n;
 
-while(!f.eof()) {
-
+while( !f.eof() ) {
     f >> numar;
-    arr[E]=numar;
+    arr[E] = numar;
     E++;
-
 }
 
-if (E<n) cout << "Nu exista";
+if( E<n ) {
+    cout << "Nu exista";
+}
 else {
-
-    sort(arr, arr+E);
+    sort( arr, arr+E );
     cout << arr[n-1];
-
 }
 
 f.close();

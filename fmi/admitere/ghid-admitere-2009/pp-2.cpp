@@ -1,16 +1,20 @@
 #include <iostream>
 using namespace std;
 
-int fact(int s, int e) {
+int fact( int s, int e ) {
 
-    if( e>=s ) return e*fact(s, e-1);
-    else return 1;
+    if( e>=s ) {
+        return e * fact( s, e-1 );
+    }
+    else {
+        return 1;
+    }
 
 }
 
-int comb(int n, int k) {
+int comb( int n, int k ) {
 
-    return fact(n-k+1, n) / fact(2, k);
+    return fact( n-k+1, n ) / fact( 2, k );
 
 }
 
@@ -24,13 +28,23 @@ int d=0, i=0;
 cout << "Dati secventa de paranteze: ";
 do {
     cin >> par;
-    if( par=='(' ) d++;
-    else if( par==')' ) i++;
+    if( par=='(' ) {
+        d++;
+    }
+    else if( par==')' ) {
+        i++;
+    }
 }
 while( par=='(' || par==')' );
 
 // afisare rezultat
-if( d==i ) cout << endl << "Sirul este corect";
-else cout << endl << "Sirul nu este corect";
+if( d==i ) {
+    cout << endl << "Sirul este corect";
+}
+else {
+    cout << endl << "Sirul nu este corect";
+}
+
+return 0;
 
 }

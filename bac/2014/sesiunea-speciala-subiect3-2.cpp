@@ -1,16 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int f(int a, int b) {
+int f( int a, int b ) {
 
-    if ( a==b ) return 0;
-
-    if ( b/a==0 ) return a+b;
-
+    if( a==b ) {
+        return 0;
+    }
+    if( b/a==0 ) {
+        return a+b;
+    }
     return f(a+2, b-3);
 
 }
-
 
 int main() {
 

@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-void F(char c) {
+void F( char c ) {
 
-    if (c>='a') {
+    if( c>='a' ) {
         cout << c;
-        F(c-1);
+        F( c-1 );
     }
 
 }
@@ -13,9 +13,7 @@ void F(char c) {
 
 int main() {
 
-
 F('d');
-
 
 return 0;
 

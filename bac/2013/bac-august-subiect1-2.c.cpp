@@ -5,30 +5,35 @@ int main() {
 
 int a, b, nr=0, x, c;
 
-a = 65;
-b = 80;
+cout << "a= ";
+cin >> a;
+
+cout << "b= ";
+cin >> b;
 
 int i=a;
 
-if ( i<=b ) {
+if( i<=b ) {
 
     do {
-
         x = i;
         c = x%10;
 
-        while (x && x%10==c) x/= 10;
+        while( x && x%10==c ) {
+            x/= 10;
+        }
 
-        if (x==0) nr++;
+        if( x==0 ) {
+            nr++;
+        }
 
         i++;
-
     }
-    while (i<=b);
+    while( i<=b );
 
 }
 
-cout << nr;
+cout << endl  << nr;
 
 return 0;
 

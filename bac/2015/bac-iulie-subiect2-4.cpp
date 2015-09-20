@@ -6,10 +6,11 @@ int main() {
 
 char a[20]="", b[20]="aurari";
 
-for(int i=0; i<strlen(b)/2; i++)
+for( int i=0; i<strlen(b)/2; i++ ) {
     a[i]=b[i];
+}
 
-cout<<a;
+cout << a;
 
 return 0;
 

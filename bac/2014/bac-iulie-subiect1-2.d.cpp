@@ -5,29 +5,27 @@ int main() {
 
 int n, d=2;
 
-
 cout << "n= ";
 cin >> n;
 
-
-cout << endl;
-
-while ( d<=n ) {
+while( d<=n ) {
 
     int p=0;
 
-    while ( n%d==0 ) {
+    while( n%d==0 ) {
         p++;
         n/= d;
     }
 
-    if ( p%2==0 && p!=0 ) cout << d << " ";
+    if( p%2==0 && p!=0 ) {
+        cout << d << " ";
+    }
 
     d++;
 
 }
 
-cout << n << endl;
+cout << endl << n;
 
 return 0;
 

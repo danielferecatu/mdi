@@ -8,21 +8,29 @@ int main() {
 
 int x, y, a, v[100]={-1};
 
-for (int i=0; i<100; i++) v[i]=-1;
-
-while(!bac.eof()) {
-    bac >> a;
-    v[a]=a;
+for( int i=0; i<100; i++ ) {
+    v[i] = -1;
 }
 
-for (int i=0; i<100; i++) {
+while( !bac.eof() ) {
+    bac >> a;
+    v[a] = a;
+}
 
-    if(v[i]!=-1) x=v[i];
+for( int i=0; i<100; i++ ) {
 
-    while(v[i]==-1) i++;
-    y=v[i];
+    if( v[i]!=-1 ) {
+        x=v[i];
+    }
 
-    if((y-x)>=2) cout<<x<<" "<<y<<endl;
+    while( v[i]==-1 ) {
+        i++;
+    }
+    y = v[i];
+
+    if( (y-x)>=2 ) {
+        cout << x << " " << y << endl;
+    }
 
 }
 

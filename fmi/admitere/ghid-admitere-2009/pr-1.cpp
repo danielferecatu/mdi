@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
 
-bool prim(int n) {
+bool prim( int n ) {
 
-for (int i=2; i<=n/2; i++) {
-    if( n%i==0 ) return false;
-}
-return true;
+    for( int i=2; i<=n/2; i++ ) {
+        if( n%i==0 ) {
+            return false;
+        }
+    }
+    return true;
 
 }
 
@@ -20,9 +22,11 @@ cout << "N= ";
 cin >> n;
 
 // incrementam p pt fiecare nr prim gasit
-for (int i=3; i<n; i+=2) {
+for( int i=3; i<n; i+=2 ) {
 
-    if( prim(i) ) p++;
+    if( prim(i) ) {
+        p++;
+    }
 
 }
 

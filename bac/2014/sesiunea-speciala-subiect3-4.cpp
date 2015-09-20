@@ -8,18 +8,19 @@ int main() {
 
 long mlen=0, len=1, mt=0, t=11, x=0, y=0;
 
-while (!f.eof()) {
+while ( !f.eof() ) {
 
     f >> x;
 
-    if (x==y) {
+    if( x==y ) {
         len++;
         t = x;
-
     }
-    else len=1;
+    else {
+        len=1;
+    }
 
-    if ( len>=mlen ) {
+    if( len>=mlen ) {
         mlen = len;
         mt = t;
     }
@@ -28,8 +29,9 @@ while (!f.eof()) {
 
 }
 
-cout << mlen << endl;
-for (int i=1; i<=mlen; i++) cout << mt << " ";
+for( int i=1; i<=mlen; i++ ) {
+    cout << mt << " ";
+}
 
 return 0;
 

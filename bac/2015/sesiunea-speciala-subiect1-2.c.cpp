@@ -19,9 +19,11 @@ while (x<=n) {
         y = y*10 + z%10;
         z/= 10;
     }
-    while ( z>0 );
+    while( z>0 );
 
-    if ( x==y ) nr++;
+    if( x==y ) {
+        nr++;
+    }
 
     x++;
 

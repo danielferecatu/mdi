@@ -12,20 +12,27 @@ bac >> x;
 
 tmp = x;
 
-while(tmp) {
-    tmp/=10;
-    m*=10;
+while( tmp ) {
+    tmp/= 10;
+    m*= 10;
 }
 
-while(!bac.eof()) {
+while( !bac.eof() ) {
 
     bac >> b;
 
-    if ( b%m==x ) tmp=b;
+    if( b%m==x ) {
+        tmp = b;
+    }
 
 }
 
-cout << tmp;
+if( tmp ) {
+    cout << tmp;
+}
+else {
+    cout << "Nu exista";
+}
 
 bac.close();
 

@@ -11,17 +11,19 @@ cin >> n;
 cout << "k= ";
 cin >> k;
 
-while (i<=n) {
+while( i<=n ) {
 
     x = i;
     p = 0;
 
-    while (x%k==0) {
+    while( x%k==0 ) {
         x/= k;
         p++;
     }
 
-    if (p>pm) pm = p;
+    if( p>pm ) {
+        pm = p;
+    }
 
     i++;
 
